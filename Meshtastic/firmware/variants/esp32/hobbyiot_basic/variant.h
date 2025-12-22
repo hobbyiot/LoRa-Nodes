@@ -1,4 +1,4 @@
-// https://betafpv.com/products/elrs-nano-tx-module
+// https://github.com/hobbyiot/LoRa-Nodes/
 
 
 // no screen
@@ -21,7 +21,7 @@
 #define LORA_DIO2 34 // none
 #define LORA_DIO3
 
-#define LED_PIN 4 //16 // green - blue is at 17
+#define LED_PIN 4 //16
 
 // #define BUTTON_PIN 25
 // #define BUTTON_NEED_PULLUP
