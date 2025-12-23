@@ -1,10 +1,8 @@
 # LoRa-Nodes - LoRa IoT boards for rapid development
 
-## LoRa Node Sensor Development board | [H2S-Dev V1.2](https://github.com/hobbyiot/HELIUM-SENSORS/tree/main/H2S-Dev%20V1.2)
+##  [H2S-Dev V1.2 | LoRa Node Sensor Development board](https://github.com/hobbyiot/HELIUM-SENSORS/tree/main/H2S-Dev%20V1.2)
 
-LoRa IoT Node board (H2S-Dev board) is a ready-to-use, Open source hardware, Arduino compatible, ESP32 based LoRa network sensor development board. It is capable of implementing a number of sensor and positioning applications. The board is mainly targeted to makers and hobbyists.
-
-H2S-Dev board is compatible with the [Meshtastic decentralized network](https://meshtastic.org/docs/about/), [Helium network](https://www.helium.com/) and others LoRa applications. Implementations are available within the current GitHub repository.
+H2S-Dev board (LoRa IoT Node) is compatible with the Meshtastic decentralized network, Helium IoT network and other LoRa based applications. H2S-Dev board is a ready-to-use, Open source hardware, Arduino compatible, ESP32 based LoRa network sensor development board. It is capable of implementing a number of sensor (Basic and Full variant) and positioning applications (Full variant only). The board is mainly targeted to makers and hobbyists. Firmware implementations are available within the current GitHub repository.
 
 ![](https://github.com/hobbyiot/HELIUM-SENSORS/blob/main/H2S-Dev%20V1.2/PICS/H2S_V1.2-100.jpg)
 
