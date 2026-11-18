@@ -13,7 +13,7 @@
 #undef GPS_TX_PIN
 
 // Screen setup
-#define HAS_SCREEN 1 // 1 = screen is present; 0 = no screen
+#define HAS_SCREEN 0 // 1 = screen is present; 0 = no screen
 
 #define USE_RF95 // RF95/SX127X
 
@@ -22,6 +22,7 @@
 #define LORA_MOSI 23
 #define LORA_CS 5
 
+//SX1276
 #define LORA_DIO0 32
 #define LORA_RESET 15
 #define LORA_DIO1 33
@@ -39,3 +40,5 @@
 #define EXT_PWR_DETECT 39
 
 #undef EXT_NOTIFY_OUT
+
+
