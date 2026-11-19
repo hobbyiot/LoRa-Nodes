@@ -47,7 +47,27 @@ On the top of the board 2x20 connector and Groove compatible footprints are loca
 
 ### H2S-Dev board V1.2 Meshtastic implementation
 
-Coming soon!
+[![Meshtastic firmware](https://img.shields.io/github/v/release/hobbyiot/LoRa-Nodes?label=Meshtastic%20firmware)](https://github.com/hobbyiot/LoRa-Nodes/releases/latest)
+
+H2S-Dev runs the official [Meshtastic](https://meshtastic.org) firmware. Ready-to-flash binaries are on the [Releases](https://github.com/hobbyiot/LoRa-Nodes/releases) page, and they follow the official Meshtastic releases: every new stable Meshtastic version is built and tested for H2S-Dev and published here.
+
+| File | Use it for | Flash address |
+|---|---|---|
+| `firmware-h2s-dev-<version>.factory.bin` | New board or clean install (erases settings) | `0x0` |
+| `firmware-h2s-dev-<version>.bin` | Updating a board that already runs Meshtastic (keeps settings) | `0x10000` |
+
+Flash with [esptool](https://docs.espressif.com/projects/esptool/) (`pipx install esptool`):
+
+```sh
+# new board / clean install
+esptool --chip esp32 -p /dev/ttyUSB0 -b 460800 erase-flash
+esptool --chip esp32 -p /dev/ttyUSB0 -b 460800 write-flash 0x0 firmware-h2s-dev-<version>.factory.bin
+
+# update, keeping your node settings
+esptool --chip esp32 -p /dev/ttyUSB0 -b 460800 write-flash 0x10000 firmware-h2s-dev-<version>.bin
+```
+
+Then connect with the Meshtastic app over Bluetooth, set your region and you are on the mesh. To build the firmware yourself, see [Meshtastic/README.md](Meshtastic/README.md).
 
 ### H2S-Dev board V1.2 Arduino code example for Helium network
 
